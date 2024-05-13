@@ -1,0 +1,114 @@
+html {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+.Navbar {
+  width: 100%;
+  min-width: 1280px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  gap: 1.75em;
+  margin-bottom: 1.3%;
+
+  img {
+    /* 이미지와 텍스트 사이의 간격 조절 */
+    padding: 0 24px;
+  }
+
+  /* 각 항목 사이의 간격 조절과 기본 글꼴 크기 설정 */
+  a {
+    font-size: 20px;
+    color: #dbdbdb;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    transition: color 0.3s ease;
+  }
+}
+
+.Navbar::after {
+  width: 100%;
+  content: ""; /* 가상 요소 생성 */
+  position: absolute; /* 절대 위치 */
+  left: 0;
+  bottom: 0; /* 아래에 붙임 */
+  height: 1px; /* 선의 높이 */
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  ); /* 무지개 색상 */
+}
+
+.Login {
+  margin-left: auto; /* 오른쪽 정렬을 위해 추가 */
+  border: 1px solid white;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.Login:hover {
+  border-color: rgb(151, 95, 255);
+}
+
+a {
+  color: #dbdbdb;
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover {
+  color: white;
+}
+
+.banner {
+  width: 98%;
+  min-width: 1280px;
+  height: 272px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.SearchContainer {
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+
+.Search {
+  width: 98%;
+  min-width: 1280px;
+  height: 50px;
+  text-align: center;
+
+  border: 2px solid white;
+  border-radius: 15px;
+
+  /* 위쪽과 아래쪽에 공간 추가 */
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.DailyChart {
+  width: 98%;
+  margin: auto;
+  display: grid;
+}
