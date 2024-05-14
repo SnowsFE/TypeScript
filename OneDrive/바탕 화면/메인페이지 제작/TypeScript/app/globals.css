@@ -88,27 +88,164 @@ a:hover {
 }
 
 .SearchContainer {
-  display: flex;
-  justify-content: center; /* 수평 가운데 정렬 */
-  align-items: center; /* 수직 가운데 정렬 */
+  margin: 1% 0;
 }
 
 .Search {
   width: 98%;
   min-width: 1280px;
-  height: 50px;
-  text-align: center;
-
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   border: 2px solid white;
   border-radius: 15px;
+}
 
-  /* 위쪽과 아래쪽에 공간 추가 */
-  margin-top: 1%;
-  margin-bottom: 1%;
+.DailyChartContainer {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* 세로 정렬을 위한 설정 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
 }
 
 .DailyChart {
-  width: 98%;
-  margin: auto;
-  display: grid;
+  align-self: flex-start; /* Flex 컨테이너 내에서 자신을 왼쪽으로 정렬 */
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 가운데 정렬 */
+  gap: 1.5em;
+}
+
+.button {
+  width: 50px;
+  height: 170px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.02);
+  border: 2px solid rgb(81, 255, 65);
+}
+
+.sliderContainer {
+  width: 100%; /* 부모 컨테이너의 너비에 맞춤 */
+  overflow: hidden;
+}
+
+.grid {
+  /* 너비를 동적으로 계산하여 설정해야 할 수 있음 */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 1em;
+  cursor: pointer;
+}
+
+/* 무지개 테두리 키프레임 추가 */
+@keyframes rainbowBorder {
+  0%,
+  100% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  28% {
+    border-color: yellow;
+  }
+  42% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  85% {
+    border-color: violet;
+  }
+}
+/* 무지개 테두리 키프레임 추가 */
+
+.box {
+  height: 170px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  animation: rainbowBorder 6s linear infinite; /* 2초 동안 애니메이션 반복 */
+}
+
+/* 현재 뜨는 아티스트, 신곡, 장르별 음악 */
+
+.Listcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* 세로 정렬을 위한 설정 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+}
+
+.List {
+  display: flex;
+  justify-content: space-around; /* 요소들 사이의 간격을 균등하게 설정 */
+  width: 100%; /* 부모 요소의 100% 너비를 사용하여 한 줄에 배치 */
+  margin-top: 2%;
+}
+
+.box3,
+.box4,
+.box5 {
+  flex: 1; /* 동일한 공간을 차지하도록 설정 */
+  margin: 4% 0 10px 40px; /* 좌우 간격을 설정 */
+  font-size: 25px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  width: 100%;
+}
+
+.grid2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row; /* 이 부분을 변경합니다. */
+  flex-wrap: wrap; /* 이 부분을 추가합니다. */
+  width: 30%;
+  height: 80%;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%; /* 넓이를 조절합니다. */
+  height: 40%; /* 높이를 조절합니다. */
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+/* 현재 뜨는 아티스트, 신곡, 장르별 음악 */
