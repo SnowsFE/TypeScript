@@ -117,10 +117,11 @@ a:hover {
 }
 
 .container {
+  width: 100%; /* 부모 컨테이너의 너비에 맞춤 */
   display: flex;
   align-items: center;
   justify-content: center; /* 가운데 정렬 */
-  gap: 1.5em;
+  gap: 1em;
 }
 
 .button {
@@ -139,15 +140,15 @@ a:hover {
 }
 
 .sliderContainer {
-  width: 100%; /* 부모 컨테이너의 너비에 맞춤 */
+  width: 100%;
   overflow: hidden;
 }
 
 .grid {
-  /* 너비를 동적으로 계산하여 설정해야 할 수 있음 */
+  width: 100%;
   display: flex;
   transition: transform 0.5s ease-in-out;
-  gap: 1em;
+  gap: 0.85em;
   cursor: pointer;
 }
 
@@ -214,6 +215,10 @@ a:hover {
   flex: 1; /* 동일한 공간을 차지하도록 설정 */
   margin: 4% 0 10px 40px; /* 좌우 간격을 설정 */
   font-size: 25px;
+}
+
+.box5 {
+  cursor: pointer;
 }
 
 .container2 {

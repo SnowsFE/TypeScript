@@ -7,8 +7,8 @@ const Nav: React.FC = () => {
     "음악",
     "커뮤니티",
     "마이픽",
-    "모집",
     "앨범 꾸미기",
+    "이벤트",
   ];
 
   return (
@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
       <div className="Navbar">
         <Image src={Logo} alt="navimage" />
         {community.map((item, index) => (
-          <a href="/" key={index}>
+          <a href="/New" key={index}>
             {item}
           </a>
         ))}
