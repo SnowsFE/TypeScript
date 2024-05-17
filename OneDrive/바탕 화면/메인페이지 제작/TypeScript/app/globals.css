@@ -1,5 +1,5 @@
 html {
-  background-color: #0a0a0a;
+  background-color: black;
   color: white;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
@@ -254,3 +254,62 @@ a:hover {
   overflow: hidden;
 }
 /* 현재 뜨는 아티스트, 신곡, 장르별 음악 */
+
+/* Grid 레이아웃 */
+.container1 {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+  gap: 10px;
+  padding: 10px;
+}
+
+.header1 {
+  grid-area: header;
+  background-color: #f8b400;
+}
+
+.sidebar1 {
+  grid-area: sidebar;
+  background-color: #34a853;
+  display: flex;
+  flex-direction: column; /* 수직 정렬 */
+  gap: 10px; /* 아이템 간격 */
+}
+
+.main1 {
+  grid-area: main;
+  background-color: #4285f4;
+  display: flex;
+  flex-direction: column; /* 수직 정렬 */
+  gap: 10px; /* 아이템 간격 */
+}
+
+.footer1 {
+  grid-area: footer;
+  background-color: #ea4335;
+}
+
+.container1 > div {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.sidebar-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+}
