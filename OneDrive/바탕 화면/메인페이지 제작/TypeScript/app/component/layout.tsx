@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../Logo/Music.png";
+import Logo from "../icon.ico";
 
 const Nav: React.FC = () => {
   const community: string[] = [
